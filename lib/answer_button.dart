@@ -7,7 +7,6 @@ class AnswerButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return ElevatedButton(
       onPressed: onTap,
       style: ElevatedButton.styleFrom(foregroundColor: Colors.white),
