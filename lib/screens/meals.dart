@@ -4,15 +4,17 @@ import 'package:first_app/widgets/meal_item.dart';
 import 'package:flutter/material.dart';
 
 class MealsScreen extends StatelessWidget {
-  const MealsScreen({super.key, this.title, required this.meals});
+  const MealsScreen({super.key, this.title, required this.meals, required this.onToggleFavotiteMeal});
 
   final String? title;
   final List<Meals> meals;
 
   void selectMeal(BuildContext context, Meals meal) {
     Navigator.of(context).push(
-        MaterialPageRoute(builder: (ctx) => MealDetailsScreen(meal: meal)));
+        MaterialPageRoute(builder: (ctx) => MealDetailsScreen(meal: meal, onToggleFavotiteMeal: onToggleFavotiteMeal,)));
   }
+
+  final void Function(Meals meal) onToggleFavotiteMeal;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,7 @@ class MealsScreen extends StatelessWidget {
         },
       ),
     );
-    
+
     if (meals.isEmpty) {
       content = const Center(
         child: Column(
