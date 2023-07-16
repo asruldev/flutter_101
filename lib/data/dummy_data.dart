@@ -35,7 +35,7 @@ const dummyMeals = [
     id: 'M1', 
     categories: ['C1', 'C2'], 
     title: 'Spagety with tomato', 
-    imageUrl: 'imageUrl', 
+    imageUrl: 'https://media.istockphoto.com/id/860931464/photo/rice-in-a-bowl-on-a-white-background.jpg?s=612x612&w=0&k=20&c=UZXMVCopJgmfcSzgAs14yVxUJ8MaNIPVdWDkjXzRL6o=', 
     ingredients: [
       'kecap',
       'garam'
@@ -55,7 +55,7 @@ const dummyMeals = [
     id: 'M2', 
     categories: ['C2'], 
     title: 'Apple pie', 
-    imageUrl: 'imageUrl', 
+    imageUrl: 'https://media.istockphoto.com/id/491090528/photo/cooked-rice.jpg?s=612x612&w=0&k=20&c=WNeDEUEioyyk6FQZQrVMrtFMDVdtbwtK951eZ8q5FNY=', 
     ingredients: [
       'kecap',
       'garam'
